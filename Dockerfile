@@ -8,7 +8,7 @@ ENV HOST=0.0.0.0
 ENV PORT=3000
 ENV WEB_ENV=production
 
-HEALTHCHECK CMD /cutee-maint --health-check
+HEALTHCHECK CMD ["/cutee-maint", "--health-check"]
 
 COPY cutee.out          /cutee
 COPY cutee-maint.out    /cutee-maint
