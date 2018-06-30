@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a href="/" class="navbar-brand"><i class="fas fa-copyright fa-sm"></i><small>utee</small></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbar-collapse-main"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item {{.Nav_Index}}">
+                <a class="nav-link" href="/"><i class="fas fa-home"></i>&nbsp;home</a>
+            </li>
+            <li class="nav-item {{.Nav_About}}">
+                <a class="nav-link" href="/about"><i class="fas fa-at"></i>&nbsp;about</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+            {{ if .IsLoggedIn }}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLogout" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img src="{{.User.Avatar}}" alt="avatar-image" class="rounded-circle" style="width: 23px;height: 23px;"/>&nbsp;{{ .User.Name }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownLogout">
+                    <a class="dropdown-item {{.Nav_Profile}}" href="/profile">
+                        <i class="fas fa-user"></i>&nbsp;profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a id="logout-link" class="dropdown-item" href="#">
+                        <i class="fas fa-sign-out-alt"></i>&nbsp;logout</a>
+                </div>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+                <a class="nav-link" href="/login/twitter">
+                    login via&nbsp;
+                    <i class="fab fa-twitter fa-sm"></i>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>
