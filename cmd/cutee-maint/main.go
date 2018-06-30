@@ -7,6 +7,7 @@ import (
 
 	"github.com/landzero/cutee/types"
 	"landzero.net/x/database/orm"
+	_ "landzero.net/x/database/orm/dialects/postgres"
 	"landzero.net/x/log"
 	"landzero.net/x/net/http/httpext"
 	"landzero.net/x/os/osext"
