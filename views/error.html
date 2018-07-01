@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>cutee - error occured</title>
+    <title>cutee - {{t "title.error_occured"}}</title>
     {{ template "partials/head" }}
 </head>
 
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="card col-md-6 offset-md-3" style="margin-top: 10rem;">
                 <div class="card-body">
-                    <h5 class="card-title text-muted"><i class="fas fa-exclamation-triangle"></i>&nbsp;error occured</h5>
+                    <h5 class="card-title text-muted"><i class="fas fa-exclamation-triangle"></i>&nbsp;{{t "title.error_occured"}}</h5>
                     <p class="card-text text-danger">{{.Error}}</p>
                     <p class="card-text text-muted"><small>correlation-id: {{.Crid}}</small></p>
                 </div>

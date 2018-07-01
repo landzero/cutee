@@ -1,0 +1,8 @@
+title:
+  about: "about"
+  home: "home"
+  profile: "profile"
+  logout: "logout"
+  login_via: "login via"
+  error_occured: "error occured"
+  redirecting: "redirecting"

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>cutee - redirecting</title>
+    <title>cutee - {{t "title.redirecting"}}</title>
     {{ template "partials/head" }}
     <meta http-equiv="refresh" content="1; url={{.RedirectURL}}">
 </head>
@@ -13,7 +13,7 @@
         <div class="row">
             <div class="card col-md-6 offset-md-3" style="margin-top: 10rem;">
                 <div class="card-body">
-                    <h5 class="card-title text-muted"><i class="fas fa-spinner fa-spin"></i>&nbsp;redirecting...</h5>
+                    <h5 class="card-title text-muted"><i class="fas fa-spinner fa-spin"></i>&nbsp;{{t "title.redirecting"}}...</h5>
                     <p class="card-text">
                         <small>{{.RedirectURL}}</small>
                     </p>

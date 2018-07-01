@@ -14,6 +14,7 @@ import (
 	"landzero.net/x/net/web"
 	"landzero.net/x/net/web/cache"
 	_ "landzero.net/x/net/web/cache/redis"
+	"landzero.net/x/net/web/i18n"
 	"landzero.net/x/net/web/session"
 	_ "landzero.net/x/net/web/session/redis"
 )
@@ -23,6 +24,13 @@ func main() {
 
 	// create Web
 	m := web.Modern()
+	// use i18n
+	m.Use(i18n.I18ner(i18n.Options{
+		Directory:   "locales",
+		BinFS:       m.IsProduction(),
+		Locales:     []string{"en-US", "zh-CN"},
+		LocaleNames: []string{"english", "简体中文"},
+	}))
 	// create options
 	opt := types.Options{
 		Domain: os.Getenv("DOMAIN"),
@@ -56,7 +64,7 @@ func main() {
 	m.Use(session.Sessioner(session.Options{
 		Adapter:       "redis",
 		AdapterConfig: os.Getenv("REDIS_URL"),
-		Secure:        m.Env() == web.PROD,
+		Secure:        m.IsProduction(),
 	}))
 	// mount routes
 	routes.Mount(m)
