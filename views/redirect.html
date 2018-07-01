@@ -12,11 +12,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="card col-md-6 offset-md-3" style="margin-top: 10rem;">
-                <div class="card-body">
-                    <h5 class="card-title text-muted"><i class="fas fa-spinner fa-spin"></i>&nbsp;{{t "title.redirecting"}}...</h5>
-                    <p class="card-text">
-                        <small>{{.RedirectURL}}</small>
-                    </p>
+                <div class="card-body text-center">
+                    <h4 class="card-title"><i class="fas fa-spinner fa-spin"></i>&nbsp;{{t "title.redirecting"}}...</h4>
+                    <p class="card-text text-muted text-monospace">{{.RedirectURL}}</p>
                 </div>
             </div>
         </div>

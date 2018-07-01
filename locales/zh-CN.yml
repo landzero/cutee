@@ -6,3 +6,8 @@ title:
   login_via: "登录"
   error_occured: "发生错误"
   redirecting: "正在重定向"
+field:
+  account: "账户"
+  name: "用户名"
+alert:
+  profile: "我们不会保存您的 twitter 账户的登录信息"

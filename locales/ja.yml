@@ -6,3 +6,8 @@ title:
   login_via: "ログイン"
   error_occured: "エラーが発生しました"
   redirecting: "リダイレクトする"
+field:
+  account: "アカウント"
+  name: "ユーザー名"
+alert:
+  profile: "あなたの twitter アカウントのログイン情報を保存しません"

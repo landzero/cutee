@@ -6,3 +6,8 @@ title:
   login_via: "login via"
   error_occured: "error occured"
   redirecting: "redirecting"
+field:
+  account: "account"
+  name: "name"
+alert:
+  profile: "we will not save login information of your twitter account"
