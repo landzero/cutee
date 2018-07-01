@@ -28,8 +28,8 @@ func main() {
 	m.Use(i18n.I18ner(i18n.Options{
 		Directory:   "locales",
 		BinFS:       m.IsProduction(),
-		Locales:     []string{"en-US", "zh-CN"},
-		LocaleNames: []string{"english", "简体中文"},
+		Locales:     []string{"en-US", "zh-CN", "ja"},
+		LocaleNames: []string{"english", "简体中文", "日本語"},
 	}))
 	// create options
 	opt := types.Options{

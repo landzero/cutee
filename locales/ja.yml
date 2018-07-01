@@ -1,0 +1,8 @@
+title:
+  about: "about"
+  home: "home"
+  profile: "個人情報"
+  logout: "ログアウト"
+  login_via: "ログイン"
+  error_occured: "エラーが発生しました"
+  redirecting: "リダイレクトする"
