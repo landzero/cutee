@@ -10,4 +10,4 @@ field:
   account: "account"
   name: "name"
 alert:
-  profile: "we will not save login information of your twitter account"
+  profile: "we don't save login information of your twitter account"

@@ -10,4 +10,4 @@ field:
   account: "アカウント"
   name: "ユーザー名"
 alert:
-  profile: "あなたの twitter アカウントのログイン情報を保存しません"
+  profile: "あなたの twitter アカウントのログイン情報は保存しません"
