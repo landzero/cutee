@@ -8,6 +8,6 @@ title:
   redirecting: "redirecting"
 field:
   account: "account"
-  name: "name"
+  name: "username"
 alert:
   profile: "we don't save login information of your twitter account"
